@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Color Change Box</title>
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        margin: 50px auto;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <script>
+      const box = document.getElementById("box");
+
+      box.addEventListener("click", function () {
+        // generate random color
+        const randomColor =
+          "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+        box.style.backgroundColor = randomColor;
+      });
+    </script>
+  </body>
+</html>

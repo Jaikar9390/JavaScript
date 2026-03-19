@@ -1,0 +1,14 @@
+<script>
+  async function order() {
+    try {
+      await abc;
+    } catch (error) {
+      console.log("abc doesn't exit", error);
+    } finally {
+      console.log("runs code anyways");
+    }
+  }
+  order().then(() => {
+    console.log("Jaikar");
+  });
+</script>

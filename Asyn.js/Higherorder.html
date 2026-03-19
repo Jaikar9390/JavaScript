@@ -1,0 +1,34 @@
+<script>
+  //Welcome
+  //Register
+  //Login
+  //Thankyou
+
+  console.log("Welcome");
+
+  const Register = (apple) => {
+    setTimeout(() => {
+      console.log("Please Register");
+      apple();
+    }, 5000);
+  };
+
+  const Login = (mango) => {
+    setTimeout(() => {
+      console.log("Login");
+      mango();
+    }, 3000);
+  };
+
+  const Thankyou = () => {
+    setTimeout(() => {
+      console.log("Thankyou");
+    }, 1000);
+  };
+
+  Register(function () {
+    Login(function () {
+      Thankyou();
+    });
+  });
+</script>

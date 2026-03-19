@@ -1,0 +1,26 @@
+<script>
+  class Mobiles {
+    constructor(n, p, r) {
+      this.name = n;
+      this.price = p;
+      this.ram = r;
+    }
+
+    set priceSet(p) {
+      if (p <= 0) {
+        alert("Price cannot be less than 0");
+      } else {
+        this.price = p;
+      }
+    }
+    get getName() {
+      return "mobile name:" + this.name;
+    }
+  }
+
+  let m1 = new Mobiles("Samsung F14", " ", "6GB");
+  let m2 = new Mobiles("Samsung A20", " ", "4GB");
+
+  console.log(m1);
+  console.log(m2);
+</script>
