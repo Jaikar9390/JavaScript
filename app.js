@@ -1,5 +1,12 @@
-document.querySelectorAll(".btn").forEach((item) => {
-  item.addEventListener("click", () => {
-    alert("Get Started");
-  });
-});
+var x = 1;
+
+function a() {
+  console.log(x);
+}
+
+function b() {
+  var x = 10;
+  a();
+}
+
+b();
